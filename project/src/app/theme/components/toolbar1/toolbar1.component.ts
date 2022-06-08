@@ -1,17 +1,15 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { AppService } from 'src/app/app.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar1',
-  templateUrl: './toolbar1.component.html'
+  templateUrl: './toolbar1.component.html',
+  styleUrls: ['./toolbar1.component.scss']
 })
 export class Toolbar1Component implements OnInit {
-  @Output() onMenuIconClick: EventEmitter<any> = new EventEmitter<any>();
-  constructor(public appService:AppService) { }
 
-  ngOnInit() { }
+  constructor() { }
 
-  public sidenavToggle(){
-    this.onMenuIconClick.emit();
+  ngOnInit(): void {
   }
+
 }

@@ -1,18 +1,12 @@
 @use '@angular/material' as mat; 
 
-@font-face {
-    font-family: 'DroidKufi-Regular';
-    /* ../../webfonts/DroidKufi-Regular.ttf */
-    src: url('../../../assets/fonts/DroidKufi-Regular.ttf') format('truetype');
-  }
-
 $custom-typography: mat.define-typography-config(
-  $font-family: 'DroidKufi-Regular'
-);//'Montserrat'
+  $font-family: 'Montserrat'
+);
 
 @include mat.core($custom-typography);
 
-@import 'theme-reset';//
+@import 'theme-reset';
 .app{
     &.green{
         @import "skins/green";
@@ -48,10 +42,5 @@ $custom-typography: mat.define-typography-config(
         @import "skins/orange-dark";
         @include mat.all-component-colors($orange-dark-theme);
         @include theme-reset($orange-dark-theme);     
-    }
-    &.orange{
-        @import "skins/orange";
-        @include mat.all-component-colors($orange-theme);
-        @include theme-reset($orange-theme);
     }
 }

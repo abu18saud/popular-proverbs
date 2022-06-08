@@ -1,11 +1,5 @@
 @import "variables";
 
-@font-face {
-    font-family: 'DroidKufi-Regular';
-    /* ../../webfonts/DroidKufi-Regular.ttf */
-    src: url('../../../assets/fonts/DroidKufi-Regular.ttf') format('truetype');
-  }
-
 /******* Base styles *******/
 *{
     margin: 0;
@@ -102,12 +96,8 @@ a{
 .social-icon{
     display: inherit;
     color: inherit;
-    margin-top: 5px;
-
     svg.mat-icon.mat-icon-lg{
-        height: 5px;
-        height: 5px;
-        width: 5px;
+        height: 37px;
     }
 }
 
@@ -737,12 +727,12 @@ button.swipe-arrow{
     } 
     &.testimonials{
         &:before{ 
-            background-image: url('~assets/images/props/flat-1/babyPlaying.webp');
+            background-image: url('~assets/images/props/flat-1/3-big.jpg');
         }
     }
     &.agents{
         &:before{ 
-            background-image: url('~assets/images/props/flat-1/playingWithCubes2.png');
+            background-image: url('~assets/images/props/office-2/4-big.jpg');
         }
     }
     &.default{

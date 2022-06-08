@@ -1,17 +1,4 @@
-@font-face {
-    font-family: 'DroidKufi-Regular';
-    /* ../../webfonts/DroidKufi-Regular.ttf */
-    src: url('../../../assets/fonts/DroidKufi-Regular.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'GE_SS_Two_Bold';
-    src: url('../../../assets/fonts/GE_SS_Two_Bold.eot') format('embedded-opentype');
-  }
-
-
-
-$font-family: 'DroidKufi-Regular';//Montserrat
+$font-family: 'Montserrat';
 $theme-max-width: 1300px;
 $top-toolbar-height: 36px;
 $main-toolbar-height: 72px;
