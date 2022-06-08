@@ -1,0 +1,10 @@
+$orange-primary: mat.define-palette(mat.$orange-palette, 700, 50, 900);
+$orange-accent: mat.define-palette(mat.$grey-palette, 300, 100, 500);
+$orange-warn: mat.define-palette(mat.$red-palette, 500, A200, 800);
+$orange-theme: mat.define-light-theme((
+    color: (
+        primary: $orange-primary,
+        accent: $orange-accent,
+        warn: $orange-warn,
+    )
+));

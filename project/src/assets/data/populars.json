@@ -1,0 +1,52 @@
+[
+    {
+        "title": "عنوان المثل",
+        "textPopular": "نص المثل",
+        "description": "قصة المثل بالكامل",
+        "author": "عبدالله السالم",
+        "country": "السعودية",
+        "governorate": "الأحساء",
+        "city": "",
+        "village": "الفضول",
+        "neighborhood": "",
+        "WhenIsItUsed": [
+            "عند الحزن",
+            "عند الجنازة"
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/flat-1/Natik_1/natik_1.jpg",
+                "medium": "assets/images/props/flat-1/Natik_1/natik_1.jpg",
+                "big": "assets/images/props/flat-1/Natik_1/natik_1.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-1/Natik_1/natik_2.jpg",
+                "medium": "assets/images/props/flat-1/Natik_1/natik_2.jpg",
+                "big": "assets/images/props/flat-1/Natik_1/natik_2.jpg"
+            }
+        ],
+        "audios": [
+            {
+                "name": "audio_1",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "audio_2",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2022-02-03 17:17:30",
+        "lastUpdate": "2019-05-20 14:20:00",
+        "views": 322
+    }
+]
