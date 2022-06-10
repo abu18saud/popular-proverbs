@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MaterialModule } from './material.module';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -25,6 +26,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MaterialModule,
     HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'ar',
