@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-
 
 @Component({
   selector: 'app-lang',
@@ -8,50 +6,10 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./lang.component.scss']
 })
 export class LangComponent implements OnInit {
-  title = 'angular-internationalization';
 
-
-  constructor(public translateService: TranslateService) { }
-
-  public selectLanguage(event: any) {
-    // TODO
-    this.translateService.use(event.target.value);
-  }
-
-  public langName = '';
+  constructor() { }
 
   ngOnInit(): void {
-    this.langName = this.getLangName(this.translateService.getDefaultLang());
   }
-
-  public changeLang(lang: string) {
-    this.translateService.use(lang);
-    this.langName = this.getLangName(lang);
-  }
-
-
-
-
-  public getLangName(lang: string) {
-    if (lang == 'en') {
-      return 'English';
-    }
-    else if (lang == 'de') {
-      return 'German';
-    }
-    else if (lang == 'fr') {
-      return 'French';
-    }
-    else if (lang == 'ru') {
-      return 'Russian';
-    }
-    else if (lang == 'tr') {
-      return 'Turkish';
-    }
-    else {
-      return 'English';
-    }
-  }
-
 
 }
