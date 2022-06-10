@@ -1,5 +1,5 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
@@ -10,7 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Toolbar1Component } from './theme/components/toolbar1/toolbar1.component';
 import { LangComponent } from './theme/components/lang/lang.component';
-
+import { MaterialModule } from './metrial.module';
 
 // import { Toolbar1Component } from './theme/components/toolbar1/toolbar1.component';
 // import { Toolbar2Component } from './theme/components/toolbar2/toolbar2.component';
@@ -32,7 +32,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     Toolbar1Component,
-    LangComponent
+    LangComponent    
   ],
   imports: [
     BrowserModule,
@@ -45,9 +45,12 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    })        
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+  providers: [
+  ],
 })
 export class AppModule { }

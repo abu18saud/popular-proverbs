@@ -11,3 +11,25 @@
         </button> 
     </span>
 </mat-menu> -->
+
+<div class="language-picker-area">
+    <div class="picker-label">
+        <select (change)="selectLanguage($event)" class="language-picker">
+            <option value="ar">عربي</option>
+            <option value="en">English</option>
+        </select>
+        <mat-form-field appearance="fill">
+            <mat-label>Favorite food</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="food">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+    </div>
+    <div class="content">
+        <h1>{{'HOME' | translate}}</h1>
+    </div>
+</div>

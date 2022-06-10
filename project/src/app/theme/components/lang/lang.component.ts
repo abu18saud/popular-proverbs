@@ -8,39 +8,49 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./lang.component.scss']
 })
 export class LangComponent implements OnInit {
-  public langName = '';
+  title = 'angular-internationalization';
 
 
   constructor(public translateService: TranslateService) { }
 
-  ngOnInit(): void {
-    this.langName = this.getLangName(this.translateService.getDefaultLang());  
+  public selectLanguage(event: any) {
+    // TODO
+    this.translateService.use(event.target.value);
   }
 
-  public changeLang(lang:string){ 
-    this.translateService.use(lang); 
-    this.langName = this.getLangName(lang);  
-  } 
+  public langName = '';
 
-  public getLangName(lang:string){
-    if(lang == 'en'){
+  ngOnInit(): void {
+    this.langName = this.getLangName(this.translateService.getDefaultLang());
+  }
+
+  public changeLang(lang: string) {
+    this.translateService.use(lang);
+    this.langName = this.getLangName(lang);
+  }
+
+
+
+
+  public getLangName(lang: string) {
+    if (lang == 'en') {
       return 'English';
     }
-    else if(lang == 'de'){
+    else if (lang == 'de') {
       return 'German';
     }
-    else if(lang == 'fr'){
+    else if (lang == 'fr') {
       return 'French';
     }
-    else if(lang == 'ru'){
+    else if (lang == 'ru') {
       return 'Russian';
     }
-    else if(lang == 'tr'){
+    else if (lang == 'tr') {
       return 'Turkish';
     }
-    else{
+    else {
       return 'English';
-    } 
+    }
   }
 
 
